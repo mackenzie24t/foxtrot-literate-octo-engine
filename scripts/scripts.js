@@ -1,7 +1,7 @@
 $(function (){
   console.log("ready!");
 
-  //   here is an array of objects. Each array item is an object.
+  //   here is an array of my skills. Each array item is an object
   const mySkills = [
     {
       skill: "Moving projects from vsCode to Github.",
@@ -23,15 +23,13 @@ $(function (){
     }
   ];
 
- 
+ // function that cycles through all items in mySkills and prints them as an unordered list
   $.each(mySkills, (index, item) => {
     
     $('#skills').append("<li>" + item.skill + "</li>");
-    
-
-    
   })
 
+  //   here is an array of facts about me. Each array item is an object
   const myAboutMe = [
     {
       fact: "I am a junior IT major with a concentration in software development",
@@ -50,12 +48,9 @@ $(function (){
     }
   ];
 
- 
+ // function that cycles through all items in myAboutMe and prints them as an unordered list
   $.each(myAboutMe, (index, item) => {
     
     $('#aboutMe').append("<li>" + item.fact + "</li>");
-    
-
-    
   })
 });
